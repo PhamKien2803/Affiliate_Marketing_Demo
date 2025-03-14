@@ -1,0 +1,40 @@
+.top-bar {
+    /* Ensure the top bar spans full width and no overflow */
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #eee;
+    padding: 5px 20px;
+  
+    /* Use flex to distribute space, and allow wrapping */
+    display: flex;
+    flex-wrap: wrap; /* This helps prevent horizontal overflow on smaller screens */
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .top-bar-left,
+  .top-bar-right {
+    display: flex;
+    flex-wrap: wrap; /* again, wrap if needed */
+    align-items: center;
+    gap: 15px; /* space between items */
+  }
+  
+  .top-bar-link {
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    white-space: nowrap; /* optional; can remove if you want text to wrap */
+  }
+  
+  .top-bar-link:hover {
+    text-decoration: underline;
+  }
+  
+  .top-bar-weather {
+    font-weight: 600;
+    color: #ed008c; /* Eva pink brand color */
+  }
+  

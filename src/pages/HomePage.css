@@ -1,0 +1,114 @@
+.homepage {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Featured section: large main article + two smaller ones on the side */
+  .featured-section {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+  
+  .featured-article {
+    position: relative;
+  }
+  
+  .featured-article img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .featured-article h2 {
+    margin: 10px 0 5px;
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .featured-article p {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  /* Sub-featured area (two smaller articles) */
+  .sub-featured-articles {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .sub-featured-article img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .sub-featured-article h3 {
+    margin: 10px 0 0;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  /* Article grid (the rest of the articles below the featured section) */
+  .article-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  
+  .article-item {
+    border: 1px solid #eee;
+    padding: 10px;
+    background-color: #fff;
+  }
+  
+  .article-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .article-item h4 {
+    margin: 10px 0 5px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .article-item p {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 992px) {
+    .featured-section {
+      grid-template-columns: 1fr;
+    }
+    .sub-featured-articles {
+      flex-direction: row;
+      gap: 10px;
+    }
+    .article-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .article-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .subscription-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
