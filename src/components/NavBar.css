@@ -1,24 +1,20 @@
 .nav-bar {
     width: 100%;
     background-color: #fff;
-    /* Drop shadow for separation */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    /* If you want space below the TopBar, add margin-top */
-    margin-top: 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   }
   
-  /* Center everything similarly to the top bar */
   .nav-bar-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 10px 20px;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 10px;
   }
   
   .nav-logo img {
-    height: 40px; /* adjust as needed */
+    height: 40px;
   }
   
   .nav-links {
@@ -29,17 +25,57 @@
     padding: 0;
   }
   
-  .nav-links li a {
+  .nav-links a {
     text-decoration: none;
     color: #333;
     font-weight: 500;
     font-size: 16px;
   }
   
-  .nav-links li a:hover {
-    color: #ed008c;
+  /* -------------------------
+     DROPDOWN STYLES
+  ------------------------- */
+  .dropdown {
+    position: relative; /* needed for absolute positioning of .dropdown-menu */
   }
   
+  /* Hidden by default */
+  .dropdown-menu {
+    display: none;
+    position: absolute; 
+    top: 100%; /* positions submenu below the parent li */
+    left: 0;
+    background-color: #fff;
+    list-style: none;
+    margin: 0;
+    padding: 10px 0;
+    min-width: 150px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    z-index: 999; /* ensure it appears above other elements */
+  }
+  
+  /* Show the menu on hover */
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown-menu li {
+    padding: 5px 10px;
+  }
+  
+  .dropdown-menu li a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .dropdown-menu li a:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* -------------------------
+     SEARCH BAR
+  ------------------------- */
   .nav-search {
     display: flex;
     align-items: center;
@@ -62,6 +98,6 @@
   }
   
   .nav-search button:hover {
-    opacity: 0.9;
+    opacity: 0.8;
   }
   

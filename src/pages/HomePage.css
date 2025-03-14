@@ -81,6 +81,18 @@
     font-size: 14px;
     color: #555;
   }
+
+  .subscription-flexcontainer {
+    flex: 1; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    gap: 20px;             
+    margin: 0 auto;        
+    max-width: 1200px;      
+    width: 100%;
+    box-sizing: border-box;
+  }
   
   /* Responsive adjustments */
   @media (max-width: 992px) {
@@ -112,3 +124,15 @@
     align-items: center;
   }
   
+  .subscription-flexcontainer img {
+    /* Control the maximum width of the smaller image */
+    max-width: 500px; 
+    width: 100%;
+    height: auto;
+  
+    /* Optional: add some styling */
+    border-radius: 8px;     /* rounded corners */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* subtle shadow */
+    object-fit: cover;      /* ensures the image fills its box if you set width/height */
+    margin: 0 20px;         /* spacing around the image if needed */
+  }

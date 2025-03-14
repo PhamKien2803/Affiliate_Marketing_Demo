@@ -67,7 +67,10 @@ const HomePage = () => {
         </div>
         {/* Add more articles as needed */}
       </div>
-      <SubscriptionForm />
+      <div className="subscription-flexcontainer">
+        <SubscriptionForm />
+        <img src="/assets/jungle1.jpg" alt="Subscribe" />
+      </div>
     </div>
   );
 };
