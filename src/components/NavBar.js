@@ -7,74 +7,45 @@ const NavBar = () => {
     <div className="nav-bar">
       <div className="nav-bar-container">
         <div className="nav-logo">
-          <Link to="/">
-            <img
-              src="https://via.placeholder.com/150x50.png?text=Eva+Logo"
-              alt="Eva Logo"
-            />
-          </Link>
+          <Link to="/" className="logo-text">MomUni</Link>
         </div>
+
         <ul className="nav-links">
           <li className="dropdown">
-            <Link to="/">Tin tức</Link>
+            <Link to="/mang-thai">Mang Thai</Link>
             <ul className="dropdown-menu">
-              <li>
-                <Link to="/tin-tuc/chinh-tri">Chính trị</Link>
-              </li>
-              <li>
-                <Link to="/tin-tuc/xa-hoi">Xã hội</Link>
-              </li>
-              <li>
-                <Link to="/tin-tuc/kinh-te">Kinh tế</Link>
-              </li>
+              <li><Link to="/mang-thai/dinh-duong">Dinh Dưỡng</Link></li>
+              <li><Link to="/mang-thai/chuan-bi">Chuẩn Bị Sinh</Link></li>
+              <li><Link to="/mang-thai/meo-hay">Mẹo Hay</Link></li>
             </ul>
           </li>
 
           <li className="dropdown">
-            <Link to="/giai-tri">Giải trí</Link>
+            <Link to="/sau-sinh">Sau Sinh</Link>
             <ul className="dropdown-menu">
-              <li>
-                <Link to="/giai-tri/phim-anh">Phim ảnh</Link>
-              </li>
-              <li>
-                <Link to="/giai-tri/nhac">Nhạc</Link>
-              </li>
-              <li>
-                <Link to="/giai-tri/sao">Sao</Link>
-              </li>
+              <li><Link to="/sau-sinh/cham-me">Chăm Sóc Mẹ</Link></li>
+              <li><Link to="/sau-sinh/cham-be">Chăm Sóc Bé</Link></li>
+              <li><Link to="/sau-sinh/giam-can">Giảm Cân</Link></li>
             </ul>
           </li>
 
           <li className="dropdown">
-            <Link to="/lam-dep">Làm đẹp</Link>
+            <Link to="/dinh-duong">Dinh Dưỡng</Link>
             <ul className="dropdown-menu">
-              <li>
-                <Link to="/lam-dep/cham-soc-da">Chăm sóc da</Link>
-              </li>
-              <li>
-                <Link to="/lam-dep/trang-diem">Trang điểm</Link>
-              </li>
-              <li>
-                <Link to="/lam-dep/thoi-trang">Thời trang</Link>
-              </li>
+              <li><Link to="/dinh-duong/cho-me">Dinh Dưỡng Mẹ</Link></li>
+              <li><Link to="/dinh-duong/cho-be">Dinh Dưỡng Bé</Link></li>
+              <li><Link to="/dinh-duong/thuc-don">Thực Đơn</Link></li>
             </ul>
           </li>
 
           <li className="dropdown">
-            <Link to="/suc-khoe">Sức khỏe</Link>
+            <Link to="/cham-con">Chăm Con</Link>
             <ul className="dropdown-menu">
-              <li>
-                <Link to="/suc-khoe/benh-phu-nu">Bệnh phụ nữ</Link>
-              </li>
-              <li>
-                <Link to="/suc-khoe/meo-vat">Mẹo vặt</Link>
-              </li>
-              <li>
-                <Link to="/suc-khoe/dinh-duong">Dinh dưỡng</Link>
-              </li>
+              <li><Link to="/cham-con/giac-ngu">Giấc Ngủ</Link></li>
+              <li><Link to="/cham-con/vui-choi">Vui Chơi</Link></li>
+              <li><Link to="/cham-con/suc-khoe">Sức Khỏe</Link></li>
             </ul>
           </li>
-
           <li className="dropdown">
             <Link to="/me-va-be">Mẹ và Bé</Link>
             <ul className="dropdown-menu">

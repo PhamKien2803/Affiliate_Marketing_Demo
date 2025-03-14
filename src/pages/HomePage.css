@@ -136,3 +136,19 @@
     object-fit: cover;      /* ensures the image fills its box if you set width/height */
     margin: 0 20px;         /* spacing around the image if needed */
   }
+
+  .slider-section {
+    margin: 20px 0;
+  }
+  
+  .carousel img {
+    max-height: 400px;
+    object-fit: cover;
+  }
+  
+  .carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
