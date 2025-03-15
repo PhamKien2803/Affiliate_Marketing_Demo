@@ -5,6 +5,12 @@ import TopBar from "./components/TopBar";
 import NavBar from "./components/NavBar";
 import HomePage from "./pages/HomePage";
 import Footer from "./components/Footer";
+import MangThai from './pages/MangThai';
+import SauSinh from "./pages/SauSinh";
+import DinhDuong from "./pages/DinhDuong";
+import ChamCon from "./pages/ChamCon";
+import MevaBe from "./pages/MevaBe";
+import BlogDetail from "./pages/BlogDetail";
 
 function App() {
   return (
@@ -16,7 +22,12 @@ function App() {
 
         <Routes>
           <Route path="/" element={<HomePage />} />
-          {/* Other routes... */}
+          <Route path="/blog/:id" element={<BlogDetail />} />
+          <Route path="/mang-thai" element={<MangThai />} />
+          <Route path="/sau-sinh" element={<SauSinh />} />
+          <Route path="/dinh-duong" element={<DinhDuong />} />
+          <Route path="/cham-con" element={<ChamCon />} />
+          <Route path="/me-va-be" element={<MevaBe />} />
         </Routes>
 
         <Footer />
