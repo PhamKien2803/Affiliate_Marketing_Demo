@@ -16,7 +16,7 @@ function App() {
   return (
     <Router>
       <div className="app">
-        <TopBar />
+        {/* <TopBar /> */}
         {/* Add margin-top in NavBar.css or here via a wrapper */}
         <NavBar />
 
